@@ -1,0 +1,360 @@
+:root {
+  --bg: #080417;
+  --bg-2: #140a36;
+  --panel: rgba(21, 14, 59, 0.82);
+  --panel-2: rgba(49, 20, 92, 0.82);
+  --text: #f7f4ff;
+  --muted: #d3cbe9;
+  --accent: #ff59cc;
+  --accent-2: #6ee7ff;
+  --accent-dark: #e23eb4;
+  --border: #6a5fcd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 50% -10%, rgba(255, 89, 204, 0.26) 0%, transparent 38%),
+    radial-gradient(circle at 10% 20%, rgba(110, 231, 255, 0.22) 0%, transparent 35%),
+    linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 72%);
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+}
+
+.starfield {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1px 1px at 70% 40%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(2px 2px at 45% 80%, rgba(255, 210, 241, 0.8), transparent),
+    radial-gradient(1px 1px at 90% 70%, rgba(194, 243, 255, 0.8), transparent),
+    radial-gradient(1px 1px at 10% 60%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 58% 12%, rgba(255, 255, 255, 0.75), transparent),
+    radial-gradient(1px 1px at 28% 88%, rgba(198, 244, 255, 0.72), transparent);
+  opacity: 0.5;
+  animation: twinkle 6s ease-in-out infinite alternate;
+}
+
+.starfield::before,
+.starfield::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.starfield::before {
+  background-image:
+    radial-gradient(1px 1px at 15% 15%, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1px 1px at 35% 75%, rgba(194, 243, 255, 0.8), transparent),
+    radial-gradient(2px 2px at 60% 25%, rgba(255, 233, 252, 0.85), transparent),
+    radial-gradient(1px 1px at 80% 85%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 52% 50%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 90% 34%, rgba(209, 247, 255, 0.75), transparent);
+  opacity: 0.45;
+  animation: twinkle 4.5s ease-in-out infinite;
+}
+
+.starfield::after {
+  background-image:
+    radial-gradient(1px 1px at 10% 45%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(2px 2px at 50% 60%, rgba(255, 226, 246, 0.85), transparent),
+    radial-gradient(1px 1px at 75% 20%, rgba(186, 236, 255, 0.85), transparent),
+    radial-gradient(1px 1px at 92% 52%, rgba(255, 255, 255, 0.75), transparent),
+    radial-gradient(1px 1px at 40% 18%, rgba(255, 255, 255, 0.72), transparent),
+    radial-gradient(1px 1px at 66% 86%, rgba(200, 246, 255, 0.72), transparent);
+  opacity: 0.35;
+  animation: twinkle 8s ease-in-out infinite reverse;
+}
+
+.hero,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  min-height: 65vh;
+  padding: 1.25rem clamp(1rem, 3vw, 3rem) 2.5rem;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  letter-spacing: 0.24rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero-content {
+  max-width: 760px;
+  margin-top: 3.5rem;
+}
+
+.eyebrow {
+  color: var(--accent-2);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3.7rem);
+  line-height: 1.1;
+  margin: 0;
+  text-shadow:
+    0 0 20px rgba(255, 89, 204, 0.24),
+    0 0 36px rgba(110, 231, 255, 0.18);
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 58ch;
+}
+
+.cta-group {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #25031d;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.65rem;
+  transition: transform 120ms ease, background-color 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: var(--accent-dark);
+}
+
+.btn-small {
+  padding: 0.55rem 0.9rem;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid #8a7cda;
+}
+
+.btn-secondary:hover {
+  background: rgba(138, 124, 218, 0.2);
+  color: var(--text);
+}
+
+main {
+  padding: 0 clamp(1rem, 3vw, 3rem) 3rem;
+}
+
+.panel {
+  backdrop-filter: blur(6px);
+  background: linear-gradient(140deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: clamp(1rem, 2vw, 2rem);
+  margin-bottom: 1.25rem;
+  box-shadow: 0 12px 28px rgba(7, 4, 28, 0.55);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.live-layout {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+  gap: 0.9rem;
+}
+
+.stream-wrap,
+.chat-wrap {
+  border: 1px solid #7f72d4;
+  border-radius: 0.85rem;
+  overflow: hidden;
+  background: #070311;
+}
+
+.stream-wrap {
+  aspect-ratio: 16 / 9;
+}
+
+.stream-wrap iframe,
+.chat-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.chat-wrap {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-wrap iframe {
+  flex: 1;
+  min-height: 450px;
+}
+
+.chat-note {
+  margin: 0;
+  padding: 0.65rem 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid #5749ac;
+}
+
+.chat-note a {
+  color: var(--accent-2);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.card {
+  background: rgba(13, 8, 37, 0.76);
+  border: 1px solid #6154bf;
+  border-radius: 0.85rem;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.final-cta {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 1rem;
+  border-top: 1px solid rgba(106, 95, 205, 0.55);
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 980px) {
+  .hero {
+    padding-bottom: 1.8rem;
+  }
+
+  .hero-content {
+    margin-top: 2.2rem;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 9vw, 2.8rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .cta-group {
+    width: 100%;
+  }
+
+  .cta-group .btn {
+    flex: 1 1 220px;
+    text-align: center;
+  }
+
+  .panel {
+    padding: 1rem;
+  }
+
+  .live-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-wrap {
+    min-height: 400px;
+  }
+
+  .chat-wrap iframe {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 640px) {
+  .top-nav {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    letter-spacing: 0.16rem;
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 0 0.8rem 2rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  .chat-wrap {
+    min-height: 330px;
+  }
+
+  .chat-wrap iframe {
+    min-height: 300px;
+  }
+
+  .chat-note {
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .starfield,
+  .starfield::before,
+  .starfield::after {
+    animation: none;
+  }
+}
