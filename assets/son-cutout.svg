@@ -1,0 +1,13 @@
+<svg width="420" height="520" viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="420" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B7CFF"/>
+      <stop offset="1" stop-color="#58E8FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="520" rx="210" fill="#0E1231"/>
+  <path d="M209 104c59 0 107 46 107 103 0 36-19 67-48 86 25 14 41 40 41 70v31H110v-31c0-30 16-56 41-70-29-19-48-50-48-86 0-57 48-103 106-103z" fill="url(#a)" fill-opacity=".35"/>
+  <circle cx="210" cy="206" r="79" fill="url(#a)"/>
+  <rect x="133" y="293" width="154" height="118" rx="58" fill="url(#a)"/>
+  <text x="50%" y="462" fill="#D6E7FF" font-family="Inter, Arial, sans-serif" font-size="20" text-anchor="middle">Replace with your son's cutout</text>
+</svg>
