@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voidagon | Cosmic Music Stream</title>
+    <meta
+      name="description"
+      content="Orbit into Voidagon's music-only live stream on Kick with a cosmic themed creator hub."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="starfield" aria-hidden="true"></div>
+
+    <header class="hero">
+      <nav class="top-nav">
+        <p class="brand">VOIDAGON</p>
+        <a class="btn btn-small" href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Watch on Kick</a>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Cosmic Creator • 24/7 Music Live Stream</p>
+        <h1>Drift through the stars with Voidagon's 24/7 live music stream.</h1>
+        <p class="lead">
+          This channel is tuned for nonstop music vibes—ambient, energetic, and late-night sessions
+          broadcasting live on Kick for the Voidagon community.
+        </p>
+        <div class="cta-group">
+          <a class="btn" href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Open Kick Channel</a>
+          <a class="btn btn-secondary" href="#live-stream">Jump to Live Player</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" id="live-stream">
+        <h2>Live music stream</h2>
+        <p>
+          Press play and listen live directly from this page. If playback is blocked by your browser,
+          use the Kick button to open the stream in a new tab.
+        </p>
+        <div class="stream-wrap">
+          <iframe
+            src="https://player.kick.com/voidagon"
+            title="Voidagon Kick live stream"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="panel" id="about">
+        <h2>Inside the orbit</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Music-Only Sessions</h3>
+            <p>Stream focus is pure music and mood—ideal for studying, gaming, or late-night chill.</p>
+          </article>
+          <article class="card">
+            <h3>Space Atmosphere</h3>
+            <p>Cosmic visuals and futuristic branding create an immersive vibe every time you tune in.</p>
+          </article>
+          <article class="card">
+            <h3>Community Frequency</h3>
+            <p>Drop into chat, request energy, and connect with listeners who ride the same wavelength.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel schedule" id="schedule">
+        <h2>Always-on broadcast</h2>
+        <p>The Voidagon music stream runs 24/7. Tune in anytime, day or night.</p>
+        <ul>
+          <li><span>24/7</span> Live music stream active nonstop</li>
+          <li><span>Anytime</span> Drop in whenever you want background vibes</li>
+          <li><span>Global</span> Available across all timezones</li>
+        </ul>
+      </section>
+
+      <section class="panel final-cta">
+        <h2>Stay locked to the signal</h2>
+        <p>Follow @voidagon on Kick and catch every music drop live.</p>
+        <a class="btn" href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Follow @voidagon</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Voidagon. Streaming music across the cosmos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
