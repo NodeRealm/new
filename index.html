@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voidagon | Hopewave Live</title>
+    <meta
+      name="description"
+      content="Join Voidagon's 24/7 Christian synthwave livestream with live player, chat, and prayer support."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="starfield" aria-hidden="true"></div>
+
+    <header class="hero">
+      <nav class="top-nav">
+        <p class="brand">VOIDAGON</p>
+        <a class="btn btn-small" href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Watch on Kick</a>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">24/7 Christian Synthwave Stream</p>
+        <h1>Welcome to Hopewave Live.</h1>
+        <p class="lead">
+          A nonstop synthwave space stream centered on peace, hope, and uplifting energy.
+          Tune in anytime and connect with the community in chat.
+        </p>
+        <div class="cta-group">
+          <a class="btn" href="#live-stream">Watch + Chat Now</a>
+          <a class="btn btn-secondary" href="mailto:voidagon@proton.me?subject=Prayer%20Request">Send Prayer Request</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" id="live-stream">
+        <h2>Live 24/7 player + chat</h2>
+        <p>The stream is always on. Listen, worship, and talk with the community in one place.</p>
+        <div class="live-layout">
+          <div class="stream-wrap">
+            <iframe
+              src="https://player.kick.com/voidagon"
+              title="Voidagon Kick live stream"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="chat-wrap">
+            <iframe
+              src="https://kick.com/voidagon/chatroom"
+              title="Voidagon Kick chat"
+              loading="lazy"
+            ></iframe>
+            <p class="chat-note">
+              If chat is blocked here, open the full chat on
+              <a href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Kick</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="about">
+        <h2>Stream pillars</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Faith-forward vibes</h3>
+            <p>Music and atmosphere designed to encourage rest, reflection, and daily hope.</p>
+          </article>
+          <article class="card">
+            <h3>Synthwave space aesthetic</h3>
+            <p>Neon skies, cosmic visuals, and ambient motion inspired by retro-future worship nights.</p>
+          </article>
+          <article class="card">
+            <h3>Prayer support</h3>
+            <p>Need prayer? Use the prayer request button and share your request directly.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel final-cta">
+        <h2>Stay in the light.</h2>
+        <p>Follow @voidagon and keep the hopewave running with us 24/7.</p>
+        <a class="btn" href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Follow @voidagon</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Voidagon. Hopewave synths across the stars.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
