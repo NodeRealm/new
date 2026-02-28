@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voidagon | Come Vibe</title>
+    <meta
+      name="description"
+      content="Come vibe with Voidagon's 24/7 music stream on Kick with live player and chat."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="starfield" aria-hidden="true"></div>
+
+    <header class="hero">
+      <nav class="top-nav">
+        <p class="brand">VOIDAGON</p>
+        <a class="btn btn-small" href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Watch on Kick</a>
+      </nav>
+
+      <div class="hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">24/7 Music Stream</p>
+          <h1>Come vibe with us.</h1>
+          <p class="lead">
+            The stream never sleeps. Press play, join chat, and keep the music flowing any time
+            you drop in.
+          </p>
+          <div class="cta-group">
+            <a class="btn" href="#live-stream">Watch + Chat Now</a>
+            <a class="btn btn-secondary" href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Open Kick Channel</a>
+          </div>
+        </div>
+
+        <figure class="hero-cutout">
+          <img src="assets/son-cutout.svg" alt="Stylized cutout art next to the Voidagon title" />
+        </figure>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" id="live-stream">
+        <h2>Live 24/7 player + chat</h2>
+        <p>Music stream is always live. Watch and follow the conversation from one place.</p>
+        <div class="live-layout">
+          <div class="stream-wrap">
+            <iframe
+              src="https://player.kick.com/voidagon"
+              title="Voidagon Kick live stream"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="chat-wrap">
+            <iframe
+              src="https://kick.com/voidagon/chatroom"
+              title="Voidagon Kick chat"
+              loading="lazy"
+            ></iframe>
+            <p class="chat-note">
+              If chat doesn't load here, open it directly on
+              <a href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Kick</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="about">
+        <h2>Inside the orbit</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Nonstop music</h3>
+            <p>Running 24/7 so you can tune in whenever you need background energy.</p>
+          </article>
+          <article class="card">
+            <h3>Cosmic atmosphere</h3>
+            <p>Space-inspired visuals and steady vibes built for focus, gaming, and chill time.</p>
+          </article>
+          <article class="card">
+            <h3>Community chat</h3>
+            <p>Hang with listeners in real time while the stream keeps playing around the clock.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel final-cta">
+        <h2>Tap in anytime.</h2>
+        <p>Follow @voidagon and keep the vibe going 24/7.</p>
+        <a class="btn" href="https://kick.com/voidagon" target="_blank" rel="noreferrer">Follow @voidagon</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Voidagon. Streaming music across the cosmos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
